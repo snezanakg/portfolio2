@@ -1,7 +1,7 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Github, Copy, Calendar, Wrench, AlertTriangle, Lightbulb, MonitorPlay, Layers } from 'lucide-react';
 import { toast, Toaster } from 'sonner';
-import { ImageWithFallback } from '../components/figma/ImageWithFallback';
+import { ImageWithFallback } from '../components/ui/ImageWithFallback';
 import { projects } from '../data/projects';
 import { Noise } from '../components/Noise';
 import { Reveal } from '../components/Reveal';

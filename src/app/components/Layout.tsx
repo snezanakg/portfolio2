@@ -142,7 +142,7 @@ export function Layout() {
           </div>
 
           <p className="mt-6 text-xs text-muted-foreground">
-            Figma Make • Noroff FED Portfolio 2
+              Designed & developed by Snezana Kragujevac
           </p>
         </div>
       </footer>
