@@ -217,23 +217,6 @@ export function Home() {
             </div>
          </div>
       </section>
-
-      {/* Footer */}
-      <footer className="py-12 border-t border-border bg-background relative z-10">
-         <div className="max-w-[1400px] mx-auto px-4 sm:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="text-xs text-muted-foreground font-mono">
-               &copy; {new Date().getFullYear()} Snezana Kragujevac. All rights reserved.
-            </div>
-            <div className="flex space-x-6">
-               <a href="https://github.com/snezanakg" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Github size={20} />
-               </a>
-               <a href="mailto:sneza.kragujevac@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Mail size={20} />
-               </a>
-            </div>
-         </div>
-      </footer>
       
     </div>
   );
