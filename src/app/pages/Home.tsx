@@ -98,7 +98,7 @@ export function Home() {
                 <div className="space-y-6 text-right">
                    <div className="border-b border-border pb-2">
                       <p className="text-xs font-mono text-muted-foreground uppercase mb-1">Location</p>
-                      <p className="text-sm font-bold flex items-center justify-end gap-2"><MapPin size={14} className="text-primary"/> Oslo, Norway</p>
+                      <p className="text-sm font-bold flex items-center justify-end gap-2"><MapPin size={14} className="text-primary"/> Gothenburg, Sweden</p>
                    </div>
                    <div className="border-b border-border pb-2">
                       <p className="text-xs font-mono text-muted-foreground uppercase mb-1">Status</p>
