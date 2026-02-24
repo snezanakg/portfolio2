@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowUpRight, Folder, GitBranch } from 'lucide-react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import { ImageWithFallback } from './ui/ImageWithFallback';
 import { projects } from '../data/projects';
 
 export function ProjectCard({ project }: { project: typeof projects[0] }) {
