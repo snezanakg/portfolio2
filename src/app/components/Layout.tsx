@@ -19,7 +19,7 @@ export function Layout() {
               Snezana Kragujevac
             </span>
             <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-primary mt-1">
-              Portfolio 2 • FED Student
+              Portfolio  • FRONTEND DEVELOPER
             </span>
           </Link>
 
