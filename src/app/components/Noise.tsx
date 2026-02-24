@@ -1,5 +1,3 @@
-import React from 'react';
-
 export function Noise() {
   return (
     <div className="fixed inset-0 z-50 pointer-events-none opacity-[0.03] mix-blend-overlay">

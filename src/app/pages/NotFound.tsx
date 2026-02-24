@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, FileQuestion } from 'lucide-react';
 import { Noise } from '../components/Noise';

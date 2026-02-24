@@ -1,6 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowUpRight, Folder, GitBranch, Calendar } from 'lucide-react';
+import { ArrowUpRight, Folder, GitBranch } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { projects } from '../data/projects';
 

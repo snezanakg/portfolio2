@@ -1,6 +1,5 @@
-import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { ArrowLeft, ExternalLink, Github, Share2, Copy, Calendar, Wrench, AlertTriangle, Lightbulb, MonitorPlay, Layers } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Github, Copy, Calendar, Wrench, AlertTriangle, Lightbulb, MonitorPlay, Layers } from 'lucide-react';
 import { toast, Toaster } from 'sonner';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import { projects } from '../data/projects';

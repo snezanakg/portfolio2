@@ -1,10 +1,9 @@
-import React from 'react';
-import { Link, Outlet, useLocation } from 'react-router-dom';
+import { useState } from 'react';
+import { Link, Outlet } from 'react-router-dom';
 import { Github, Linkedin, Mail, Menu, X } from 'lucide-react';
 
 export function Layout() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const location = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
     { name: 'Home', path: '/' },
@@ -35,6 +34,7 @@ export function Layout() {
                 {link.name}
               </Link>
             ))}
+
             <a
               href="https://github.com/snezanakg"
               target="_blank"
@@ -45,12 +45,16 @@ export function Layout() {
             </a>
           </nav>
 
-          {/* Mobile Nav Toggle */}
+          {/* Mobile Toggle */}
           <button
             className="md:hidden p-2 text-muted-foreground hover:text-primary transition-colors focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
 
@@ -68,14 +72,30 @@ export function Layout() {
                   {link.name}
                 </Link>
               ))}
+
               <div className="flex space-x-4 pt-4 border-t border-border">
-                <a href="https://github.com/snezanakg" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
+                <a
+                  href="https://github.com/snezanakg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary"
+                >
                   <Github className="w-6 h-6" />
                 </a>
-                <a href="https://www.linkedin.com/in/snezana-k-a03693102/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
+
+                <a
+                  href="https://www.linkedin.com/in/snezana-k-a03693102/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary"
+                >
                   <Linkedin className="w-6 h-6" />
                 </a>
-                <a href="mailto:sneza.kragujevac@gmail.com" className="text-muted-foreground hover:text-primary">
+
+                <a
+                  href="mailto:sneza.kragujevac@gmail.com"
+                  className="text-muted-foreground hover:text-primary"
+                >
                   <Mail className="w-6 h-6" />
                 </a>
               </div>
@@ -93,17 +113,34 @@ export function Layout() {
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} Snezana Kragujevac. All rights reserved.
           </p>
+
           <div className="mt-4 flex justify-center space-x-6">
-            <a href="https://github.com/snezanakg" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+            <a
+              href="https://github.com/snezanakg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
               <Github className="w-5 h-5" />
             </a>
-            <a href="https://www.linkedin.com/in/snezana-k-a03693102/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+
+            <a
+              href="https://www.linkedin.com/in/snezana-k-a03693102/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
               <Linkedin className="w-5 h-5" />
             </a>
-            <a href="mailto:sneza.kragujevac@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+
+            <a
+              href="mailto:sneza.kragujevac@gmail.com"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
               <Mail className="w-5 h-5" />
             </a>
           </div>
+
           <p className="mt-6 text-xs text-muted-foreground">
             Figma Make • Noroff FED Portfolio 2
           </p>

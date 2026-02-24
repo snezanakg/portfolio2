@@ -1,9 +1,8 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import { Github, ExternalLink, ArrowDown, MapPin, Code2, Database, Layout, Mail, Terminal, Coffee, BookOpen } from 'lucide-react';
+import { Github, ArrowDown, MapPin, Code2, Database, Layout, Mail, Terminal, Coffee } from 'lucide-react';
 import { ProjectCard } from '../components/ProjectCard';
 import { projects } from '../data/projects';
-import { Noise } from '../components/Noise';
 import { Reveal } from '../components/Reveal';
 
 export function Home() {
