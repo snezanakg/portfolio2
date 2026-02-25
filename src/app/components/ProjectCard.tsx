@@ -12,7 +12,7 @@ export function ProjectCard({ project }: { project: typeof projects[0] }) {
         <div className="flex items-center justify-between px-3 py-2 border-b border-border bg-background/50 mb-1">
            <div className="flex items-center space-x-2">
               <Folder size={12} className="text-primary" />
-              <span className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground line-clamp-1">
+              <span className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground">
                  {project.id}
               </span>
            </div>
@@ -38,29 +38,29 @@ export function ProjectCard({ project }: { project: typeof projects[0] }) {
         </div>
 
         {/* Content */}
-        <div className="p-5 flex flex-col h-[180px]"> {/* Fixed height for consistency */}
+        <div className="p-5 flex flex-col min-h-[220px]">
           <div className="flex justify-between items-start mb-3">
              <span className="text-[10px] font-mono uppercase tracking-widest text-primary border border-primary/20 px-2 py-0.5 rounded bg-primary/5">
                 {project.duration}
              </span>
           </div>
 
-          <h3 className="text-xl font-bold text-foreground mb-3 leading-tight group-hover:text-primary transition-colors line-clamp-2">
+          <h3 className="text-xl font-bold text-foreground mb-3 leading-tight group-hover:text-primary transition-colors">
             {project.title}
           </h3>
           
-          <p className="text-sm text-foreground/70 leading-relaxed line-clamp-3 mb-4">
+          <p className="text-sm text-foreground/70 leading-relaxed mb-4">
             {project.shortDescription}
           </p>
 
           <div className="mt-auto pt-4 border-t border-border border-dashed flex items-center justify-between">
              <div className="flex gap-2">
-                {project.tools.slice(0, 3).map(tool => (
+                {project.tools?.slice(0, 3).map(tool => (
                    <span key={tool} className="text-[10px] text-muted-foreground/70 font-mono uppercase">
                       {tool}
                    </span>
                 ))}
-                {project.tools.length > 3 && (
+                {project.tools?.length > 3 && (
                    <span className="text-[10px] text-muted-foreground/70 font-mono uppercase">+</span>
                 )}
              </div>
