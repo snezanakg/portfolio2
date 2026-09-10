@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import { Github, ArrowDown, MapPin, Code2, Database, Layout, Mail, Terminal, Coffee } from 'lucide-react';
+import { Github, ArrowDown, MapPin, Code2, Database, Layout, Mail, Terminal, Download } from 'lucide-react';
 import { ProjectCard } from '../components/ProjectCard';
 import { projects } from '../data/projects';
 import { Reveal } from '../components/Reveal';
@@ -20,10 +20,12 @@ export function Home() {
   const skills = [
     { name: 'React', category: 'Frontend', icon: <Code2 size={14} /> },
     { name: 'TypeScript', category: 'Language', icon: <Terminal size={14} /> },
+    { name: 'JavaScript', category: 'Language', icon: <Terminal size={14} /> },
     { name: 'Tailwind CSS', category: 'Styling', icon: <Layout size={14} /> },
     { name: 'Supabase', category: 'Backend', icon: <Database size={14} /> },
-    { name: 'Figma', category: 'Design', icon: <Layout size={14} /> },
+    { name: 'REST APIs', category: 'Integration', icon: <Database size={14} /> },
     { name: 'Git & GitHub', category: 'Version Control', icon: <Github size={14} /> },
+    { name: 'Figma', category: 'Design', icon: <Layout size={14} /> },
   ];
 
   return (
@@ -58,7 +60,7 @@ export function Home() {
              <Reveal>
               <div className="inline-flex items-center space-x-2 mb-6 border border-primary/30 px-3 py-1 rounded-full bg-primary/5">
                 <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-xs font-mono text-primary uppercase tracking-widest">Available for hire</span>
+                <span className="text-xs font-mono text-primary uppercase tracking-widest">Open to full-stack and frontend opportunities</span>
               </div>
             </Reveal>
             
@@ -72,8 +74,7 @@ export function Home() {
 
             <Reveal delay={0.2}>
               <p className="text-lg sm:text-2xl text-muted-foreground max-w-2xl font-light leading-relaxed mb-10 border-l-2 border-primary pl-6">
-                Frontend Development Student at <span className="text-foreground font-medium">Noroff</span>. 
-                Focusing on authentic digital experiences, clean code, and user-centric design.
+                Full-stack developer building responsive web applications with React, TypeScript, JavaScript, Supabase, authentication, and REST APIs.
               </p>
             </Reveal>
 
@@ -89,6 +90,10 @@ export function Home() {
                     <Github className="mr-2 w-4 h-4" />
                     GitHub
                  </a>
+                 <a href="/Snezana-Kragujevac-Full-Stack-Developer-CV.pdf" download className="px-8 py-4 border border-foreground/20 text-foreground font-bold text-sm tracking-widest uppercase hover:bg-foreground/5 transition-colors flex items-center">
+                    <Download className="mr-2 w-4 h-4" />
+                    Download CV
+                 </a>
               </div>
             </Reveal>
           </div>
@@ -102,11 +107,11 @@ export function Home() {
                    </div>
                    <div className="border-b border-border pb-2">
                       <p className="text-xs font-mono text-muted-foreground uppercase mb-1">Status</p>
-                      <p className="text-sm font-bold flex items-center justify-end gap-2"><Coffee size={14} className="text-primary"/> 2nd Year Student</p>
+                      <p className="text-sm font-bold flex items-center justify-end gap-2"><Code2 size={14} className="text-primary"/> Full-Stack Developer</p>
                    </div>
                    <div className="border-b border-border pb-2">
                       <p className="text-xs font-mono text-muted-foreground uppercase mb-1">Focus</p>
-                      <p className="text-sm font-bold flex items-center justify-end gap-2"><Layout size={14} className="text-primary"/> React & Tailwind</p>
+                      <p className="text-sm font-bold flex items-center justify-end gap-2"><Layout size={14} className="text-primary"/> React, TypeScript & Supabase</p>
                    </div>
                 </div>
              </Reveal>
@@ -132,7 +137,7 @@ export function Home() {
             </Reveal>
             <Reveal delay={0.1}>
                <p className="max-w-sm text-muted-foreground text-sm leading-relaxed border-l border-border pl-4">
-                 A collection of my most significant academic projects, demonstrating progression from vanilla JavaScript to complex React applications.
+                 Five academic and collaborative applications demonstrating frontend development, authentication, API integration, data management, and Git-based teamwork.
                </p>
             </Reveal>
           </div>
@@ -158,18 +163,14 @@ export function Home() {
                         <span className="text-xs font-mono uppercase tracking-widest text-primary">About Me</span>
                      </div>
                      <h2 className="text-3xl sm:text-4xl font-bold mb-8 leading-tight">
-                        I build things for the web with a focus on <span className="text-primary border-b-2 border-primary/20">simplicity</span> and <span className="text-primary border-b-2 border-primary/20">structure</span>.
+                        I build accessible web applications from responsive interfaces to authentication and data-driven features.
                      </h2>
                      <div className="prose prose-invert text-muted-foreground space-y-6">
                         <p>
-                           My journey into frontend development started with a curiosity about how the web works. 
-                           Two years into my studies at Noroff, that curiosity has turned into a disciplined practice of building 
-                           user-centric applications.
+                           I have built and contributed to applications for accommodation booking, auctions, content publishing, social networking, and map-based property discovery.
                         </p>
                         <p>
-                           I believe in "learning by doing". Whether it's wrestling with Vanilla JS DOM manipulation 
-                           or managing complex state in React, every bug fixed is a lesson learned. This portfolio 
-                           isn't just a showcase of code; it's a documentation of my growth.
+                           My work combines React, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Supabase, REST APIs, and Git-based development workflows. I focus on reusable components, clear structure, responsive layouts, and accessible user experiences.
                         </p>
                      </div>
 
@@ -190,7 +191,7 @@ export function Home() {
                         </div>
                         <h3 className="text-xl font-bold mb-8 flex items-center">
                            <Terminal className="mr-3 text-primary" size={20} />
-                           Technical Arsenal
+                           Technical Skills
                         </h3>
                         
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-8">

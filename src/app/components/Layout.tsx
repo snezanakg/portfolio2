@@ -19,7 +19,7 @@ export function Layout() {
               Snezana Kragujevac
             </span>
             <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-primary mt-1">
-              Portfolio  • FRONTEND DEVELOPER
+              Portfolio • FULL-STACK DEVELOPER
             </span>
           </Link>
 
@@ -42,6 +42,7 @@ export function Layout() {
               className="p-2 text-muted-foreground hover:text-primary transition-colors"
             >
               <Github className="w-5 h-5" />
+              <span className="sr-only">GitHub profile</span>
             </a>
           </nav>
 
@@ -131,6 +132,7 @@ export function Layout() {
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Linkedin className="w-5 h-5" />
+              <span className="sr-only">LinkedIn profile</span>
             </a>
 
             <a
@@ -138,6 +140,7 @@ export function Layout() {
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail className="w-5 h-5" />
+              <span className="sr-only">Email Snezana Kragujevac</span>
             </a>
           </div>
 

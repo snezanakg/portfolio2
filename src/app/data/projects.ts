@@ -6,6 +6,8 @@ import semesterArticle from "../../assets/projects/semester2-auction-article.web
 
 import newsThumb from "../../assets/projects/supabase-news-thumb.webp";
 import newsArticle from "../../assets/projects/supabase-news-article.webp";
+import wiresVisual from "../../assets/projects/wires-visual.svg";
+import norEstateVisual from "../../assets/projects/norestate-visual.svg";
 
 export const projects = [
   {
@@ -83,6 +85,58 @@ export const projects = [
       "Refactored JavaScript logic",
       "Enhanced layout structure",
       "Improved loading behavior"
+    ],
+  },
+
+  {
+    id: "wires-social-platform",
+    title: "WIRES – Social Platform",
+    duration: "JavaScript 2 Course Assignment",
+    shortDescription:
+      "Social application with authentication, profiles, protected routes, and session handling.",
+    thumbnail: wiresVisual,
+    articleImage: wiresVisual,
+    liveLink: "https://github.com/NoroffFEU/fed2-js2-ca-snezanakg",
+    githubLink: "https://github.com/NoroffFEU/fed2-js2-ca-snezanakg",
+    caption: "WIRES project overview",
+    tools: ["JavaScript", "ES Modules", "Fetch API", "Noroff API"],
+    fullDescription:
+      "WIRES is a JavaScript social application supporting registration, login, profiles, navigation, and logout through the Noroff Social API v2.",
+    challenge:
+      "Coordinating authentication state, protected routes, form validation, and API-driven profile flows in a structured client-side application.",
+    solution:
+      "Implemented JavaScript ES Modules, token storage, LocalStorage-based session handling, automatic redirects, protected routes, and validated authentication forms.",
+    improvements: [
+      "Structured features with JavaScript ES Modules",
+      "Implemented registration and login flows",
+      "Protected authenticated routes",
+      "Managed tokens and sessions with LocalStorage"
+    ],
+  },
+
+  {
+    id: "norestate-map-view",
+    title: "NorEstate – Map View Page",
+    duration: "Collaborative Project",
+    shortDescription:
+      "Map-view interface contribution completed through a collaborative GitHub branch workflow.",
+    thumbnail: norEstateVisual,
+    articleImage: norEstateVisual,
+    liveLink: "https://github.com/NoroffFEU/NorEstate/tree/Map-View-Page-",
+    githubLink: "https://github.com/NoroffFEU/NorEstate/tree/Map-View-Page-",
+    caption: "NorEstate map-view contribution",
+    tools: ["Git", "GitHub", "Branch Workflow", "Team Collaboration"],
+    fullDescription:
+      "NorEstate is a collaborative property application. My contribution focused on the map-view page in a dedicated project branch.",
+    challenge:
+      "Contributing a focused interface feature while keeping the work isolated and reviewable within a shared repository.",
+    solution:
+      "Worked through a dedicated GitHub branch and followed a branch-based collaboration workflow for the map-view page.",
+    improvements: [
+      "Contributed the map-view page",
+      "Worked in a dedicated feature branch",
+      "Applied Git and GitHub collaboration practices",
+      "Kept the contribution scoped for team integration"
     ],
   },
 ];

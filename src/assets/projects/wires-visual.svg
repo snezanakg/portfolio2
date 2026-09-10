@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">WIRES social platform</title>
+  <desc id="desc">Abstract interface showing connected profile cards and authentication flows.</desc>
+  <rect width="1200" height="750" fill="#07111f"/>
+  <g stroke="#23d5ab" stroke-width="3" opacity=".55"><path d="M190 220 480 365 760 190 1010 390 735 585 430 535Z" fill="none"/><path d="M480 365 430 535M760 190 735 585M1010 390 480 365"/></g>
+  <g fill="#0e2238" stroke="#23d5ab" stroke-width="4"><rect x="105" y="145" width="235" height="150" rx="18"/><rect x="440" y="285" width="270" height="165" rx="18"/><rect x="710" y="110" width="235" height="150" rx="18"/><rect x="820" y="465" width="235" height="150" rx="18"/></g>
+  <g fill="#23d5ab"><circle cx="165" cy="205" r="24"/><circle cx="505" cy="350" r="24"/><circle cx="770" cy="170" r="24"/><circle cx="880" cy="525" r="24"/></g>
+  <g fill="#d7f9ef"><rect x="205" y="187" width="95" height="12" rx="6"/><rect x="205" y="215" width="70" height="10" rx="5" opacity=".6"/><rect x="545" y="332" width="120" height="12" rx="6"/><rect x="545" y="360" width="90" height="10" rx="5" opacity=".6"/><rect x="810" y="152" width="95" height="12" rx="6"/><rect x="810" y="180" width="70" height="10" rx="5" opacity=".6"/><rect x="920" y="507" width="95" height="12" rx="6"/><rect x="920" y="535" width="70" height="10" rx="5" opacity=".6"/></g>
+  <text x="105" y="675" fill="#f3f7fb" font-family="system-ui, sans-serif" font-size="68" font-weight="800">WIRES</text><text x="355" y="675" fill="#23d5ab" font-family="monospace" font-size="28">SOCIAL PLATFORM</text>
+</svg>

@@ -100,7 +100,7 @@ export function ProjectDetail() {
           <figure className="mb-16">
             <img
               src={project.articleImage}
-              alt={project.title}
+              alt={`${project.title} application interface`}
               className="w-full rounded-md border border-border"
             />
             <figcaption className="text-sm text-muted-foreground mt-4">
@@ -154,7 +154,7 @@ export function ProjectDetail() {
           <section className="mb-16">
             <h2 className="text-2xl font-bold mb-6 flex items-center">
               <Wrench className="mr-2 w-5 h-5 text-primary" />
-              Key Improvements
+              Work Completed
             </h2>
             <ul className="space-y-4">
               {project.improvements.map((item, index) => (
